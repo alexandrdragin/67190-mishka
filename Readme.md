@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Alexandr Dragin](https://up.htmlacademy.ru/adaptive/8/user/67190).
-* Наставник: `Неизвестно`.
+* Наставник: `None`.
 
 ---
 
