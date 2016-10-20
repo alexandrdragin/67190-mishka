@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Мишка: Каталог</title>
+  </head>
+  <body>
+
+    <div class="global-wrapper">
+
+      <header class="page-header">
+        <nav class="main-nav main-nav--open">
+          <a class="main-nav__item" href="catalog.html">Каталог товаров</a>
+          <a class="main-nav__item" href="form.html">Вязание на заказ</a>
+          <a class="main-nav__item">logo</a>
+          <a class="main-nav__item">search</a>
+          <a class="main-nav__item">Корзина: пока пуста</a>
+        </nav>
+
+        <button class="button-nav">
+          <svg class="button-nav__icon-menu button-nav--close" height="22" width="22">
+            <use xlink:href="#icon-cross" />
+          </svg>
+          <svg class="button-nav__icon-menu button-nav--open" height="25" width="25">
+            <use xlink:href="#icon-menu" />
+          </svg>
+        </button>
+
+        <div class="sub-header">
+          <a class="sub-header__item" href="">Новые поступления</a>
+          <a class="sub-header__item" href="">Распродажа</a>
+          <a class="sub-header__item" href="">Бесплатная доставка по России</a>
+          <h1 class="sub-header__item sub-header__item--header">
+            Каталог товаров
+          </h1>
+        </div>
+      </header>
+
+      <main class="main">
+
+        <section class="items-block">
+          <div class="items-block__toy">
+            <img class="items-block__toy-img">
+            <span class="items-block__toy-header">Зайчик-попрыгайчик</span>
+            <p class="items-block__toy-text">Рост 30 см, вес 200 г</p>
+            <span class="items-block__toy-price">1 200 руб.</span>
+          </div>
+          <div class="items-block__toy">
+            <img class="items-block__toy-img">
+            <span class="items-block__toy-header">Корзинка для белья</span>
+            <p class="items-block__toy-text">Диаметр 15 см, высота 10 см</p>
+            <span class="items-block__toy-price">690 руб.</span>
+          </div>
+          <div class="items-block__toy">
+            <img class="items-block__toy-img">
+            <span class="items-block__toy-header">Большая корзинка для игрушек</span>
+            <p class="items-block__toy-text">Диаметр 30 см, высота 30 см</p>
+            <span class="items-block__toy-price">1 500 руб.</span>
+          </div>
+        </section>
+
+        <section class="video-block">
+          <div class="video-block__video">
+            <span class="video-block__play"></span>
+          </div>
+          <div class="video-block__description">
+            <span class="video-block__header">Процесс производства</span>
+            <p class="video-block__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <button class="video-block__button button-mixin" type="button">Сделать заказ</button>
+          </div>
+        </section>
+      </main>
+
+
+      <footer class="page-footer">
+        <div class="page-footer__header">Mishka</div>
+
+        <div class="page-footer__item-wrapper">
+          <a class="page-footer__item" href="http://www.instagram.com" target="_blank">
+            <svg class="page-footer__icon" height="40%" width="40%">
+              <use xlink:href="#icon-twitter" />
+            </svg>
+          </a>
+          <a class="page-footer__item" href="http://www.facebook.com" target="_blank">
+            <svg class="page-footer__icon" height="40%" width="40%">
+              <use xlink:href="#icon-facebook" />
+            </svg>
+          </a>
+          <a class="page-footer__item" href="http://www.twitter.com" target="_blank">
+            <svg class="page-footer__icon" height="40%" width="40%">
+              <use xlink:href="#icon-twitter" />
+            </svg>
+          </a>
+        </div>
+
+        <a class="page-footer__copyrigth" href="https://htmlacademy.ru/" target="_blank">Друзья
+          <svg class="page-footer__copyrigth-icon" height="40" width="40">
+            <use class="page-footer__htmlacademy" xlink:href="#htmlacademy" />
+          </svg>
+        </a>
+      </footer>
+
+
+      <div class="modal-overlay  modal-overlay--hidden">
+        <div class="modal-overlay__text-block">
+          <h2 class="modal-overlay__header">
+            Добавить в корзину
+          </h2>
+          <p class="modal-overlay__text">Выберите размер:</p>
+
+
+          <div class="modal-overlay__radio-wrapper">
+            <label class="modal-overlay__radio-label" for="S">
+              <input class="modal-overlay__radio-input" type="radio" name="size" value="S" id="S" checked/>
+              <span class="modal-overlay__radio-before"></span>
+              S
+            </label>
+          </div>
+
+          <div class="modal-overlay__radio-wrapper">
+            <label class="modal-overlay__radio-label" for="M">
+              <input class="modal-overlay__radio-input" type="radio" name="size" value="M" id="M"/>
+              <span class="modal-overlay__radio-before"></span>
+              M
+            </label>
+          </div>
+
+          <div class="modal-overlay__radio-wrapper">
+            <label class="modal-overlay__radio-label" for="L">
+              <input class="modal-overlay__radio-input" type="radio" name="size" value="L" id="L"/>
+              <span class="modal-overlay__radio-before"></span>
+              L
+            </label>
+          </div>
+
+        </div>
+
+        <button class="modal-overlay__button" type="button">Добавить</button>
+      </div>
+
+    </div>
+
+  </body>
+</html>
