@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Мишка: Форма</title>
+  </head>
+
+  <body>
+    <div class="global-wrapper">
+
+      <header class="page-header">
+        <nav class="main-nav  main-nav--open">
+          <a class="main-nav__item" href="catalog.html">Каталог товаров</a>
+          <a class="main-nav__item" href="form.html">Вязание на заказ</a>
+          <a class="main-nav__item">logo</a>
+          <a class="main-nav__item">search</a>
+          <a class="main-nav__item">Корзина: пока пуста</a>
+        </nav>
+
+        <button class="button-nav">
+          <svg class="button-nav__icon-menu button-nav--close" height="22" width="22">
+            <use xlink:href="#icon-cross" />
+          </svg>
+          <svg class="button-nav__icon-menu button-nav--open" height="25" width="25">
+            <use xlink:href="#icon-menu" />
+          </svg>
+        </button>
+
+        <div class="sub-header">
+          <a class="sub-header__item" href="">Новые поступления</a>
+          <a class="sub-header__item" href="">Распродажа</a>
+          <a class="sub-header__item" href="">Бесплатная доставка по России</a>
+          <h1 class="sub-header__item  sub-header__item--header">
+            Вязание на заказ
+          </h1>
+        </div>
+      </header>
+
+      <main class="main">
+        <form class="form-block">
+          <p class="form-block__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+          <div class="form-block__wrapper">
+
+            <fieldset class="form-input">
+              <h2 class="form-input__header">Тип</h2>
+
+              <div class="form-input-radio">
+                <label class="form-input-radio__label" for="Int">
+                  <input class="form-input-radio__input" type="radio" name="int" value="int" id="Int" checked/>
+                  <span class="form-input-radio__before"></span>
+                    Аксессуар для интерьера
+                </label>
+              </div>
+
+              <div class="form-input-radio">
+                <label class="form-input-radio__label" for="Toy">
+                  <input class="form-input-radio__input" type="radio" name="toy" value="notnice" id="Toy" />
+                  <span class="form-input-radio__before"></span>
+                    Детская игрушка
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-input">
+              <h2 class="form-input__header">Цвет</h2>
+
+              <div class="form-input__checkbox-flexwrapper">
+                <div class="form-input__checkbox">
+                  <input class="form-input__checkbox-input" type="checkbox" value="Белый" name="color" id="White" checked />
+                  <label class="form-input__checkbox-label" for="White">Белый</label>
+                </div>
+
+                <div class="form-input__checkbox">
+                  <input class="form-input__checkbox-input" type="checkbox" value="Серый" name="color" id="Grey" checked />
+                  <label class="form-input__checkbox-label" for="Grey">Серый</label>
+                </div>
+
+                <div class="form-input__checkbox">
+                  <input class="form-input__checkbox-input" type="checkbox" value="«Тиффани»" name="color" id="Tiff" />
+                  <label class="form-input__checkbox-label" for="tiff">«Тиффани»</label>
+                </div>
+
+                <div class="form-input__checkbox">
+                  <input class="form-input__checkbox-input" type="checkbox" value="Черный" name="color" id="Black"  />
+                  <label class="form-input__checkbox-label" for="Black">Черный</label>
+                </div>
+
+                <div class="form-input__checkbox">
+                  <input class="form-input__checkbox-input" type="checkbox" value="Розовый" name="color" id="Pink" />
+                  <label class="form-input__checkbox-label" for="Pink">Розовый</label>
+                </div>
+
+                <div class="form-input__checkbox">
+                  <input class="form-input__checkbox-input" type="checkbox" value="Оранжевый" name="color" id="Orange"  />
+                  <label class="form-input__checkbox-label" for="Orange">Оранжевый</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-input">
+              <h2 class="form-input__header">ФИО:</h2>
+
+              <div class="form-input__name">
+                <label class="form-input__name-label" for="first-name">ИМЯ:</label>
+                <input class="form-input__name-input" id="first-name" type="text" placeholder="Введите ваше имя" name="first-name" required>
+              </div>
+              <div class="form-input__name">
+                <label class="form-input__name-label" for="last-name">ФАМИЛИЯ:</label>
+                <input class="form-input__name-input" id="last-name" type="text" placeholder="Укажите фамилию" name="last-name" required>
+              </div>
+              <div class="form-input__name">
+                <label class="form-input__name-label" for="middle-name">ОТЧЕСТВО:</label>
+                <input class="form-input__name-input" id="middle-name" type="text" placeholder="Отчество, если желаете" name="middle-name">
+              </div>
+            </fieldset>
+
+            <fieldset class="form-input">
+              <div class="form-input__contact-wrapper">
+
+                <div class="form-input__contact">
+                  <label class="form-input__contact-label" for="tel">Tел:</label>
+                  <input class="form-input__contact-input" id="tel" type="tel" placeholder="+7 ХХХ ХХ ХХ" name="tel" required>
+                  <div class="form-input__contact-icon-box">
+                    <svg class="form-input__contact-icon" height="20" width="20">
+                      <use xlink:href="#icon-phone" />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="form-input__contact">
+                  <label class="form-input__contact-label" for="email">E-mail:</label>
+                  <input class="form-input__contact-input" id="email" type="text" placeholder="Ваш Email" name="email">
+                  <div class="form-input__contact-icon-box">
+                    <svg class="orm-input__contact-icon" height="20" width="20">
+                      <use xlink:href="#icon-mail" />
+                    </svg>
+                  </div>
+                </div>
+
+              </div>
+            </fieldset>
+
+            <fieldset class="form-input">
+              <h2 class="form-input__header">Доп</h2>
+
+              <textarea class="form-input__textarea" name="review" id="review" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+
+            </fieldset>
+
+            <button class="form-input__submit" type="submit">Отправить заказ</button>
+
+            <div class="form-input__checker">Все поля являются обязательными</div>
+
+          </div>
+        </form>
+      </main>
+
+
+      <footer class="page-footer">
+        <div class="page-footer__header">Mishka</div>
+
+        <div class="page-footer__item-wrapper">
+          <a class="page-footer__item" href="http://www.instagram.com" target="_blank">
+            <svg class="page-footer__icon" height="40%" width="40%">
+              <use xlink:href="#icon-twitter" />
+            </svg>
+          </a>
+          <a class="page-footer__item" href="http://www.facebook.com" target="_blank">
+            <svg class="page-footer__icon" height="40%" width="40%">
+              <use xlink:href="#icon-facebook" />
+            </svg>
+          </a>
+          <a class="page-footer__item" href="http://www.twitter.com" target="_blank">
+            <svg class="page-footer__icon" height="40%" width="40%">
+              <use xlink:href="#icon-twitter" />
+            </svg>
+          </a>
+        </div>
+
+        <a class="page-footer__copyrigth" href="https://htmlacademy.ru/" target="_blank">Друзья
+          <svg class="page-footer__copyrigth-icon" height="40" width="40">
+            <use class="page-footer__htmlacademy" xlink:href="#htmlacademy" />
+          </svg>
+        </a>
+      </footer>
+
+
+      <div class="modal-overlay  modal-overlay--hidden">
+        <div class="modal-overlay__text-block">
+          <h2 class="modal-overlay__header">
+            Добавить в корзину
+          </h2>
+          <p class="modal-overlay__text">Выберите размер:</p>
+
+
+          <div class="modal-overlay__radio-wrapper">
+            <label class="modal-overlay__radio-label" for="S">
+              <input class="modal-overlay__radio-input" type="radio" name="size" value="S" id="S" checked/>
+              <span class="modal-overlay__radio-before"></span>
+              S
+            </label>
+          </div>
+
+          <div class="modal-overlay__radio-wrapper">
+            <label class="modal-overlay__radio-label" for="M">
+              <input class="modal-overlay__radio-input" type="radio" name="size" value="M" id="M"/>
+              <span class="modal-overlay__radio-before"></span>
+              M
+            </label>
+          </div>
+
+          <div class="modal-overlay__radio-wrapper">
+            <label class="modal-overlay__radio-label" for="L">
+              <input class="modal-overlay__radio-input" type="radio" name="size" value="L" id="L"/>
+              <span class="modal-overlay__radio-before"></span>
+              L
+            </label>
+          </div>
+
+        </div>
+
+        <button class="modal-overlay__button" type="button">Добавить</button>
+      </div>
+
+    </div>
+  </body>
+</html>
