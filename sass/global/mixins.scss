@@ -1,0 +1,33 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container {
+
+  width: 320px;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    width: 768px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 1200px;
+  }
+}
+
+@mixin mobile-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@mixin sub-header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+
+}
