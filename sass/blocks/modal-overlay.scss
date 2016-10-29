@@ -1,0 +1,63 @@
+.modal-overlay {
+  position: fixed;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  right: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 18px 1px rgba(0, 0, 0, 0.2);
+
+  &__text-block {
+
+  }
+
+  &__header {
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 18px;
+    line-height: 26px;
+
+    @media #{$tablet-widths} {
+      font-size: 24px;
+    }
+
+    @media #{$desktop-widths} {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+      font-size: 17px;
+  }
+
+  &__radio-wrapper {
+
+  }
+
+  &__radio-label {
+
+  }
+
+  &__radio-input {
+
+  }
+
+  &__radio-before {
+
+  }
+
+  &__button {
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 17px;
+    background-color: $green;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}

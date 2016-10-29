@@ -1,0 +1,29 @@
+body {
+  font-size: 18px;
+  font-family:"Open Sans", Arial, Sans-serif;
+  line-height: 27px;
+  color: #333;
+  font-style: normal;
+  box-sizing: border-box;
+
+  background-color: white;
+
+  @include container;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.global-wrapper {
+
+}

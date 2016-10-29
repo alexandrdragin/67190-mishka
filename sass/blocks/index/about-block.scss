@@ -1,0 +1,98 @@
+.about-block {
+
+  &__header {
+    @include header;
+  }
+
+  &__item-wrapper {
+
+  }
+
+  &__item {
+
+  }
+
+  &__icon {
+
+  }
+
+  &__text {
+    font-size: 17pt;
+    line-height: 24pt;
+    font-weight: bold;
+
+    @media #{$tablet-widths} {
+      font-size: 20pt;
+      line-height: 24pt;
+    }
+
+    @media #{$desktop-widths} {
+
+    }
+
+  }
+
+  &__feedback-wrapper {
+
+  }
+
+  &__feedback-header {
+    @include header;
+
+  }
+
+  &__feedback-text {
+    font-size: 15pt;
+    line-height: 30pt;
+
+    @media #{$tablet-widths} {
+      font-size: 17pt;
+      line-height: 24pt;
+    }
+
+    @media #{$desktop-widths} {
+
+    }
+
+
+  }
+
+  &__feedback-name {
+
+  }
+
+  &__feedback-name-author {
+    font-size: 18pt;
+    line-height: 30pt;
+    font-weight: bold;
+
+    @media #{$tablet-widths} {
+      font-size: 17pt;
+      line-height: 24pt;
+    }
+
+    @media #{$desktop-widths} {
+
+    }
+  }
+
+  &__feedback-name-login {
+    font-size: 18pt;
+    line-height: 30pt;
+
+    @media #{$tablet-widths} {
+      font-size: 17pt;
+      line-height: 24pt;
+    }
+
+  }
+
+  &__feedback-arrow {
+
+  }
+
+  &__button {
+  @include button-text;
+
+  }
+}
