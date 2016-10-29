@@ -1,0 +1,32 @@
+.items-block {
+
+  &__toy {
+    border: 1px solid $footer;
+
+  }
+
+  &__toy-img {
+    background-color: #e8e9eb;
+
+  }
+
+  &__toy-header {
+    font-weight: bold;
+    font-size: 20pt;
+    line-height: 24px;
+
+
+  }
+
+  &__toy-text {
+    font-size: 15pt;
+    line-height: 30px;
+
+  }
+
+  &__toy-price {
+    font-weight: bold;
+    font-size: 17pt;
+    line-height: 24px;
+  }
+}

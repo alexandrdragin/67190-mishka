@@ -1,0 +1,36 @@
+.page-footer {
+  background-color: $footer;
+
+ &__header {
+
+ }
+ &__item-wrapper {
+
+ }
+
+ &__item {
+
+ }
+
+ &__icon {
+
+ }
+
+ &__copyright {
+   font-weight: bold;
+   font-size: 19pt;
+   line-height: 18px;
+
+   @media #{$tablet-widths} {
+
+   }
+
+   @media #{$desktop-widths} {
+
+   }
+ }
+
+ &__copyright-icon {
+
+ }
+}

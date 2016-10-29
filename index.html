@@ -14,7 +14,7 @@
         <nav class="main-nav main-nav--open">
           <a class="main-nav__item" href="catalog.html">Каталог товаров</a>
           <a class="main-nav__item" href="form.html">Вязание на заказ</a>
-          <a class="main-nav__item">logo</a>
+          <a class="main-nav__item" href="index.html">logo</a>
           <a class="main-nav__item">search</a>
           <a class="main-nav__item">Корзина: пока пуста</a>
         </nav>
@@ -29,11 +29,13 @@
         </button>
 
         <div class="sub-header">
-          <a class="sub-header__item" href="">Новые поступления</a>
-          <a class="sub-header__item" href="">Распродажа</a>
-          <a class="sub-header__item" href="">Бесплатная доставка по России</a>
-          <h1 class="sub-header__item sub-header__item--header">
-            Милые штуки ручной работы для дома
+          <div class="sub-header-wrapper">
+            <a class="sub-header__item" href="">Новые поступления</a>
+            <a class="sub-header__item" href="">Распродажа</a>
+            <a class="sub-header__item sub-header__item--right" href="">Бесплатная доставка по России</a>
+          </div>
+          <h1 class="sub-header__header sub-header__header--img">
+            Каталог товаров
           </h1>
         </div>
       </header>
@@ -52,7 +54,7 @@
           <div class="featured-main">
             <h2 class="featured-main__header header-mixin">Вязаные корзинки</h2>
             <small class="featured-main__label">ТОВАР НЕДЕЛИ</small>
-            <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <p class="featured-main__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
             <div class="featured-main__about">
               <p class="featured-main__about-column">Цвет:<br>Диаметр:<br>Высота:</p>
@@ -99,7 +101,7 @@
           </div>
 
           <div class="about-block__feedback-wrapper">
-            <h2 class="about-block__feedback-header header-mixin">Отзывы</h2>
+            <h2 class="about-block__feedback-header">Отзывы</h2>
             <p class="about-block__feedback-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
 
             <div class="about-block__feedback-name">
@@ -112,23 +114,28 @@
               <span class="about-block__feedback-arrow  about-block__feedback-arrow--right"></span>
             </div>
 
-            <button class="about-block__button button-mixin" type="button">Написать</button>
+            <button class="about-block__button" type="button">Написать</button>
           </div>
         </section>
 
         <section class="contacts-block">
-          <h2 class="contacts-block__header header-mixin">Отзывы</h2>
+          <h2 class="contacts-block__header">Контакты</h2>
 
-          <p class="contacts-block__column">e-mail:<br>адрес:</p>
-          <p class="contacts-block__column">info@mimimishkashop.ru<br>г. Санкт-Петербург,
-            ул. Большая Конюшенная,
-            д. 19/8, офис 101</p>
+          <div class="contacts-block__wrapper">
+            <p class="contacts-block__column">e-mail:</p>
+            <p class="contacts-block__column">info@mimimishkashop.ru</p>
+          </div>
+          <div class="contacts-block__wrapper">
+            <p class="contacts-block__column">адрес:</p>
+            <p class="contacts-block__column">г. Санкт-Петербург,
+            ул. Большая Конюшенная, д. 19/8, офис 101</p>
+          </div>
 
           <picture class="contacts-block__map contacts-block__map--pin">
             <img class="contacts-block__map-image" src="" height="350" width="320" alt="Карта">
           </picture>
 
-          <button class="contacts-block__button button-mixin" type="button">Напишите нам</button>
+          <button class="contacts-block__button" type="button">Напишите нам</button>
         </section>
       </main>
 
@@ -154,8 +161,8 @@
           </a>
         </div>
 
-        <a class="page-footer__copyrigth" href="https://htmlacademy.ru/" target="_blank">Друзья
-          <svg class="page-footer__copyrigth-icon" height="40" width="40">
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/" target="_blank">Друзья
+          <svg class="page-footer__copyright-icon" height="40" width="40">
             <use class="page-footer__htmlacademy" xlink:href="#htmlacademy" />
           </svg>
         </a>
