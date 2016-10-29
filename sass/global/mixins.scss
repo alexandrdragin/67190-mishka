@@ -25,9 +25,31 @@
   padding-right: 20px;
 }
 
-@mixin sub-header {
-  text-align: center;
+@mixin header {
+  font-weight: bold;
+  line-height: 25px;
+  font-size: 27pt;
+
+  @media #{$tablet-widths} {
+    font-size: 43pt;
+    line-height: 50px;
+  }
+
+  @media #{$desktop-widths} {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+@mixin button-text {
+  font-size: 18pt;
+  line-height: 30pt;
   text-transform: uppercase;
-  font-size: 14px;
+  font-weight: bold;
+
+  @media #{$tablet-widths} {
+    font-size: 17pt;
+    line-height: 24pt;
+  }
 
 }

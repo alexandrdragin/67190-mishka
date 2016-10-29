@@ -1,10 +1,37 @@
 .contacts-block {
 
   &__header {
+    font-size: 18pt;
+    line-height: 30pt;
+    font-weight: bold;
+
+    @media #{$tablet-widths} {
+      font-size: 43pt;
+      line-height: 50pt;
+    }
+
+    @media #{$desktop-widths} {
+      font-size: 53pt;
+      line-height: 57pt;
+    }
 
   }
 
+  &__wrapper {
+    
+  }
+
   &__column {
+    font-size: 15pt;
+    line-height: 30pt;
+
+    @media #{$tablet-widths} {
+      font-size: 17pt;
+    }
+
+    @media #{$desktop-widths} {
+
+    }
 
   }
 
@@ -13,11 +40,12 @@
   }
 
   &__map-image {
+    background-color: $footer;
 
   }
 
   &__button {
-
+    @include button-text;
   }
 
 }

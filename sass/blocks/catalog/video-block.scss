@@ -1,6 +1,7 @@
 .video-block {
 
   &__video {
+    background-color: #e8e9eb;
 
   }
 
@@ -13,14 +14,21 @@
   }
 
   &__header {
-
+    font-weight: bold;
+    font-size: 20pt;
+    line-height: 24px;
   }
 
   &__text {
+    font-size: 15pt;
+    line-height: 30px;
 
   }
 
   &__button {
+    font-weight: bold;
+    font-size: 17pt;
+    line-height: 16px;
 
   }
 }

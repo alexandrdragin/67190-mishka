@@ -1,10 +1,43 @@
 .featured-main {
 
   &__header {
+    font-size: 25pt;
+    line-height: 30pt;
+    font-weight: bold;
+    color: white;
+
+    @media #{$tablet-widths} {
+      font-size: 43pt;
+      line-height: 50pt;
+    }
+
+    @media #{$desktop-widths} {
+      font-size: 53pt;
+      line-height: 57pt;
+    }
 
   }
 
   &__label {
+    font-size: 17pt;
+    line-height: 16pt;
+    font-weight: bold;
+    color: $green;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 15pt;
+    line-height: 24pt;
+
+    @media #{$tablet-widths} {
+      font-size: 17pt;
+      line-height: 30pt;
+    }
+
+    @media #{$desktop-widths} {
+
+    }
 
   }
 
@@ -13,7 +46,8 @@
   }
 
   &__about-column {
-
+    font-size: 15pt;
+    line-height: 20pt;
   }
 
   &__picture {
@@ -21,14 +55,27 @@
   }
 
   &__picture-image {
+    background-color: #f1f1f1;
 
   }
 
   &__price {
+    font-size: 17pt;
+    line-height: 24pt;
+    font-weight: bold;
+
+    @media #{$tablet-widths} {
+      font-size: 20pt;
+      line-height: 24pt;
+    }
+
+    @media #{$desktop-widths} {
+
+    }
 
   }
 
   &__button {
-
+    @include button-text;
   }
 }

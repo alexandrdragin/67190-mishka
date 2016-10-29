@@ -4,4 +4,20 @@
 
 .featured-intro {
 
+  &__item {
+    font-size: 19pt;
+    line-height: 24pt;
+    font-weight: bold;
+    color: white;
+
+    @media #{$tablet-widths} {
+      font-size: 20pt;
+      line-height: 30pt;
+    }
+
+    @media #{$desktop-widths} {
+
+    }
+  }
+
 }

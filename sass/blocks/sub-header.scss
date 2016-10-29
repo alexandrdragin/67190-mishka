@@ -1,8 +1,43 @@
 .sub-header {
+  background-color: #fafafa;
 
   &__item {
 
-    &--header {
+    display: none;
+
+    @media #{$tablet-widths} {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 15pt;
+      line-height: 24px;
+    }
+
+    @media #{$desktop-widths} {
+
+    }
+
+    &--rigth {
+      font-weight: normal;
+    }
+
+  }
+
+  &__header {
+    font-weight: bold;
+    font-size: 27pt;
+    line-height: 30px;
+
+    @media #{$tablet-widths} {
+      font-size: 43pt;
+      line-height: 50px;
+
+    }
+
+    @media #{$desktop-widths} {
+
+    }
+
+    &--img{
 
     }
   }

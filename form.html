@@ -14,7 +14,7 @@
         <nav class="main-nav  main-nav--open">
           <a class="main-nav__item" href="catalog.html">Каталог товаров</a>
           <a class="main-nav__item" href="form.html">Вязание на заказ</a>
-          <a class="main-nav__item">logo</a>
+          <a class="main-nav__item" href="index.html">logo</a>
           <a class="main-nav__item">search</a>
           <a class="main-nav__item">Корзина: пока пуста</a>
         </nav>
@@ -29,11 +29,13 @@
         </button>
 
         <div class="sub-header">
-          <a class="sub-header__item" href="">Новые поступления</a>
-          <a class="sub-header__item" href="">Распродажа</a>
-          <a class="sub-header__item" href="">Бесплатная доставка по России</a>
-          <h1 class="sub-header__item  sub-header__item--header">
-            Вязание на заказ
+          <div class="sub-header-wrapper">
+            <a class="sub-header__item" href="">Новые поступления</a>
+            <a class="sub-header__item" href="">Распродажа</a>
+            <a class="sub-header__item sub-header__item--right" href="">Бесплатная доставка по России</a>
+          </div>
+          <h1 class="sub-header__header sub-header__header--img">
+            Каталог товаров
           </h1>
         </div>
       </header>
@@ -50,7 +52,7 @@
               <div class="form-input-radio">
                 <label class="form-input-radio__label" for="Int">
                   <input class="form-input-radio__input" type="radio" name="int" value="int" id="Int" checked/>
-                  <span class="form-input-radio__before"></span>
+                  <span class="form-input-radio__after"></span>
                     Аксессуар для интерьера
                 </label>
               </div>
@@ -64,7 +66,7 @@
               </div>
             </fieldset>
 
-            <fieldset class="form-input">
+            <fieldset class="form-input form-input--grey">
               <h2 class="form-input__header">Цвет</h2>
 
               <div class="form-input-checkbox__flexwrapper">
@@ -117,11 +119,12 @@
               </div>
             </fieldset>
 
-            <fieldset class="form-input">
+            <fieldset class="form-input form-input--grey">
               <div class="form-input-contact__wrapper">
 
+                <h2 class="form-input__header">Tел:</h2>
                 <div class="form-input-contact">
-                  <label class="form-input-contact__label" for="tel">Tел:</label>
+                  <label class="form-input-contact__label" for="tel"></label>
                   <input class="form-input-contact__input" id="tel" type="tel" placeholder="+7 ХХХ ХХ ХХ" name="tel" required>
                   <div class="form-input-contact__icon-box">
                     <svg class="form-input-contact__icon" height="20" width="20">
@@ -130,6 +133,7 @@
                   </div>
                 </div>
 
+                <h2 class="form-input__header">E-mail:</h2>
                 <div class="form-input__contact">
                   <label class="form-input-contact__label" for="email">E-mail:</label>
                   <input class="form-input-contact__input" id="email" type="text" placeholder="Ваш Email" name="email">
