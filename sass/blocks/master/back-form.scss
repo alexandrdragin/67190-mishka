@@ -1,0 +1,14 @@
+body {
+  background: white url("/img/form-mobile.png") no-repeat 50% 0px;
+  background-size: 320px auto;
+  min-height: 3932px;
+
+  @media #{$tablet-widths} {
+    background: white url("/img/form-tablet.png") no-repeat 50% 0px;
+    background-size: 768px auto;
+  }
+
+  @media #{$desktop-widths}  {
+    background: white url("/img/form-desktop.png") no-repeat center top / 1280px auto;
+  }
+}

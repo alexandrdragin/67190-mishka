@@ -1,5 +1,17 @@
 .contacts-block {
 
+  min-height: 900px;
+  border: 1px solid yellow;
+
+  @media #{$tablet-widths} {
+    min-height: 940px;
+  }
+
+  @media #{$desktop-widths} {
+    min-height: 650px;
+
+  }
+
   &__header {
     font-size: 18pt;
     line-height: 30pt;
@@ -18,7 +30,7 @@
   }
 
   &__wrapper {
-    
+
   }
 
   &__column {

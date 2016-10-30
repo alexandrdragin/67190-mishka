@@ -1,8 +1,7 @@
 .sub-header {
-  background-color: #fafafa;
+  //background-color: #f9f9f9;
 
   &__item {
-
     display: none;
 
     @media #{$tablet-widths} {
@@ -15,14 +14,14 @@
     @media #{$desktop-widths} {
 
     }
+  }
 
-    &--rigth {
-      font-weight: normal;
-    }
-
+  &__item--right {
+    font-weight: normal;
   }
 
   &__header {
+    text-align: center;
     font-weight: bold;
     font-size: 27pt;
     line-height: 30px;

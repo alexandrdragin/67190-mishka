@@ -1,8 +1,18 @@
 .featured-block {
-
+  
 }
 
 .featured-intro {
+  min-height: 205px;
+  border: 1px solid yellow;
+
+  @media #{$tablet-widths} {
+    min-height: 120px;
+  }
+
+  @media #{$desktop-widths} {
+
+  }
 
   &__item {
     font-size: 19pt;
