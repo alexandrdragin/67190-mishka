@@ -1,10 +1,35 @@
 .form-input {
+  border: 0.5pt solid yellow;
+  margin-top: 15pt;
+  margin-bottom: 20pt;
+
+  @media #{$tablet-widths} {
+      margin-bottom: 0;
+      margin-top: 0;
+
+  }
+
+  @media #{$desktop-widths} {
+
+    margin-bottom: 0;
+  }
 
   &__header {
-    font-size: 17pt;
+    font-size: 12pt;
     line-height: 16pt;
     text-transform: uppercase;
     color: $green;
+
+    @media #{$tablet-widths} {
+
+        margin-top: 70px;
+
+    }
+
+    @media #{$desktop-widths} {
+
+      margin-left: 48pt;
+    }
   }
 
   &__textarea {
@@ -26,6 +51,6 @@
   }
 
   &--grey {
-    background-color: $footer;
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }

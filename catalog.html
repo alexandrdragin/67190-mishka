@@ -12,12 +12,21 @@
 
       <header class="page-header">
         <nav class="main-nav main-nav--open">
-          <a class="main-nav__item" href="catalog.html">Каталог товаров</a>
-          <a class="main-nav__item" href="form.html">Вязание на заказ</a>
-          <a class="main-nav__item" href="index.html">logo</a>
-          <a class="main-nav__item">search</a>
-          <a class="main-nav__item">Корзина: пока пуста</a>
+          <div lass="main-nav main-nav--left">
+            <a class="main-nav__item" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__item" href="form.html">Вязание на заказ</a>
+          </div>
+          <div lass="main-nav main-nav--right">
+            <a class="main-nav__item">search</a>
+            <a class="main-nav__item">Корзина: пока пуста</a>
+          </div>
         </nav>
+
+        <a class="page-header__logo-wrapper" href="index.html">
+          <picture>
+            <img class="page-header__logo" src="img/logo-sedona-mobile.svg" height="90" width="210" alt="Мишка">
+          </picture>
+        </a>
 
         <button class="button-nav">
           <svg class="button-nav__icon-menu button-nav--close" height="22" width="22">
@@ -30,9 +39,11 @@
 
         <div class="sub-header">
           <div class="sub-header-wrapper">
-            <a class="sub-header__item" href="">Новые поступления</a>
-            <a class="sub-header__item" href="">Распродажа</a>
-            <a class="sub-header__item sub-header__item--right" href="">Бесплатная доставка по России</a>
+            <a class="sub-header__item  sub-header__item--desktop" href="">Новые поступления</a>
+            <a class="sub-header__item  sub-header__item--desktop" href="">Распродажа</a>
+            <a class="sub-header__item  sub-header__item--tablet" href="">Каталог товаров</a>
+            <a class="sub-header__item  sub-header__item--tablet" href="">Вязание на заказ</a>
+            <a class="sub-header__item  sub-header__item--right" href="">Бесплатная доставка по России</a>
           </div>
           <h1 class="sub-header__header sub-header__header--img">
             Каталог товаров

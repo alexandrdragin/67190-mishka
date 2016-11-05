@@ -1,6 +1,11 @@
 .page-footer {
+  position: relative;
   background-color: $footer;
+  min-height: 160px;
 
+  border: 1px solid red;
+
+  display: inline-block;
  &__header {
 
  }

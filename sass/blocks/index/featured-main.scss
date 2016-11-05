@@ -1,10 +1,20 @@
 .featured-main {
 
+  min-height: 825px;
+  border: 1px solid green;
+
+  @media #{$tablet-widths} {
+    min-height: 620px;
+  }
+
+  @media #{$desktop-widths} {
+    min-height: 800px;
+  }
+
   &__header {
     font-size: 25pt;
     line-height: 30pt;
     font-weight: bold;
-    color: white;
 
     @media #{$tablet-widths} {
       font-size: 43pt;

@@ -3,6 +3,18 @@
 }
 
 .featured-intro {
+  min-height: 205px;
+  border: 1px solid yellow;
+
+
+  @media #{$tablet-widths} {
+    min-height: 120px;
+
+  }
+
+  @media #{$desktop-widths} {
+
+  }
 
   &__item {
     font-size: 19pt;
@@ -10,9 +22,18 @@
     font-weight: bold;
     color: white;
 
+
+
     @media #{$tablet-widths} {
-      font-size: 20pt;
-      line-height: 30pt;
+      font-size: 15pt;
+      line-height: 22pt;
+      display: inline-block;
+
+      margin-top: 18pt;
+      margin-left: 32px;
+      margin-right: 185px;
+
+      border: 1px solid black;
     }
 
     @media #{$desktop-widths} {

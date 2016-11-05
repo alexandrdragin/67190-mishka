@@ -3,7 +3,23 @@
   line-height: 24pt;
   font-weight: bold;
 
+  min-height: 77px;
+  border: 1px solid green;
+
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    min-height: 85px;
+
+    width: auto;
+    margin: 0;
+  }
+
+
   &__item {
+    display: none;
+
+    min-height: 80px;
 
   }
 
@@ -12,6 +28,14 @@
   }
 
   &--close {
+
+  }
+
+  &--left {
+
+  }
+
+  &--right {
 
   }
 }
