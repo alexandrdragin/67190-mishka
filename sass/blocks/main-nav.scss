@@ -3,13 +3,13 @@
   line-height: 24pt;
   font-weight: bold;
 
-  min-height: 80px;
+  min-height: 77px;
   border: 1px solid green;
 
   margin: 0 auto;
 
   @media #{$tablet-widths} {
-    min-height: 90px;
+    min-height: 85px;
 
     width: auto;
     margin: 0;

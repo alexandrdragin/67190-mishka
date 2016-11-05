@@ -1,11 +1,24 @@
 .page-header {
-position: relative;
+  position: relative;
 
   min-height: 360px;
   border: 1px solid red;
 
   @media #{$tablet-widths} {
     min-height: 715px;
+  }
+
+
+  &--small {
+    min-height: 255px;
+
+    @media #{$tablet-widths} {
+      min-height: 310px;
+    }
+
+    @media #{$desktop-widths} {
+      min-height: 340px;
+    }
   }
 
   &__logo-wrapper {
@@ -27,6 +40,8 @@ position: relative;
   }
 
   &__logo {
+    margin-top: 20px;
+    margin-left: 83px;
 
   }
 }

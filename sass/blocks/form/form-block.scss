@@ -1,7 +1,30 @@
 .form-block {
 
   &__text {
-    font-size: 15pt;
+    border: 0.5pt solid black;
+
+    margin-top: 16pt;
+    font-size: 10pt;
+    line-height: 18pt;
+
+    margin-bottom: 5px;
+
+    letter-spacing: -0.15px;
+
+    @media #{$tablet-widths} {
+      margin-top: 55pt;
+      margin-bottom: 2px;
+
+      font-size: 13pt;
+      line-height: 22pt;
+    }
+
+    @media #{$desktop-widths} {
+      line-height: 23pt;
+
+      margin: 90pt 130pt 0pt 130pt;
+    }
+
 
   }
 

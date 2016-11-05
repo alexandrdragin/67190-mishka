@@ -1,18 +1,51 @@
 .form-input-checkbox {
-  font-size: 19pt;
-  line-height: 18pt;
+  font-size: 12pt;
+  line-height: 46pt;
   font-weight: bold;
 
+  margin-left: 45pt;
+
+  letter-spacing: 1px;
+
+  @media #{$tablet-widths} {
+    font-size: 14pt;
+
+    display: inline-block;
+
+    margin-left: 65pt;
+  }
+
+  @media #{$desktop-widths} {
+
+    margin-bottom: 20pt;
+  }
+
   &__flexwrapper {
+    margin-top: 9pt;
 
+    margin-bottom: -10px;
+
+    @media #{$tablet-widths} {
+      margin-top: -40px;
+
+      margin-left: 160px;
+
+      min-height: 280px;
+    }
+
+    @media #{$desktop-widths} {
+      min-height: 200px;
+
+      margin-bottom: 0;
+    }
   }
 
 
-  &__checkbox-input {
-
+  &__input {
+        display: none;
   }
 
-  &__checkbox-label {
+  &__label {
 
 
 
