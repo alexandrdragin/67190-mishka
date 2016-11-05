@@ -10,14 +10,23 @@
   <body>
     <div class="global-wrapper">
 
-      <header class="page-header">
+      <header class="page-header  page-header--small">
         <nav class="main-nav  main-nav--open">
-          <a class="main-nav__item" href="catalog.html">Каталог товаров</a>
-          <a class="main-nav__item" href="form.html">Вязание на заказ</a>
-          <a class="main-nav__item" href="index.html">logo</a>
-          <a class="main-nav__item">search</a>
-          <a class="main-nav__item">Корзина: пока пуста</a>
+          <div lass="main-nav  main-nav--left">
+            <a class="main-nav__item" href="catalog.html">Каталог товаров</a>
+            <a class="main-nav__item" href="form.html">Вязание на заказ</a>
+          </div>
+          <div lass="main-nav  main-nav--right">
+            <a class="main-nav__item">search</a>
+            <a class="main-nav__item">Корзина: пока пуста</a>
+          </div>
         </nav>
+
+        <a class="page-header__logo-wrapper" href="index.html">
+          <picture>
+            <img class="page-header__logo" src="img/logo-mobile.svg" height="90" width="90" alt="Мишка">
+          </picture>
+        </a>
 
         <button class="button-nav">
           <svg class="button-nav__icon-menu  button-nav--close" height="22" width="22">
@@ -30,12 +39,14 @@
 
         <div class="sub-header">
           <div class="sub-header-wrapper">
-            <a class="sub-header__item" href="">Новые поступления</a>
-            <a class="sub-header__item" href="">Распродажа</a>
-            <a class="sub-header__item sub-header__item--right" href="">Бесплатная доставка по России</a>
+            <a class="sub-header__item  sub-header__item--desktop" href="">Новые поступления</a>
+            <a class="sub-header__item  sub-header__item--desktop" href="">Распродажа</a>
+            <a class="sub-header__item  sub-header__item--tablet" href="">Каталог товаров</a>
+            <a class="sub-header__item  sub-header__item--tablet" href="">Вязание на заказ</a>
+            <a class="sub-header__item  sub-header__item--right" href="">Бесплатная доставка по России</a>
           </div>
           <h1 class="sub-header__header sub-header__header--img">
-            Каталог товаров
+            Вязание на заказ
           </h1>
         </div>
       </header>
@@ -50,19 +61,10 @@
               <h2 class="form-input__header">Тип</h2>
 
               <div class="form-input-radio">
-                <label class="form-input-radio__label" for="Int">
-                  <input class="form-input-radio__input" type="radio" name="int" value="int" id="Int" checked/>
-                  <span class="form-input-radio__after"></span>
-                    Аксессуар для интерьера
-                </label>
-              </div>
-
-              <div class="form-input-radio">
-                <label class="form-input-radio__label" for="Toy">
-                  <input class="form-input-radio__input" type="radio" name="toy" value="notnice" id="Toy" />
-                  <span class="form-input-radio__before"></span>
-                    Детская игрушка
-                </label>
+                <input class="form-input-radio__input" type="radio" name="item-type" id="acc" checked>
+                  <label class="form-input-radio__label" for="acc">Аксессуар для интерьера</label>
+                <input class="form-input-radio__input" type="radio" name="item-type" id="toy">
+                  <label class="form-input-radio__label" for="toy">Детская игрушка</label>
               </div>
             </fieldset>
 

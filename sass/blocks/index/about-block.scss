@@ -1,4 +1,14 @@
 .about-block {
+  min-height: 1400px;
+  border: 1px solid red;
+
+  @media #{$tablet-widths} {
+    min-height: 1160px;
+  }
+
+  @media #{$desktop-widths} {
+    min-height: 1200px;
+  }
 
   &__header {
     @include header;
