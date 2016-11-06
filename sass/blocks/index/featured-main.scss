@@ -1,24 +1,33 @@
 .featured-main {
+  @include main-padding;
 
-  min-height: 825px;
+  min-height: 820px;
   border: 1px solid green;
+  text-align: left;
 
   @media #{$tablet-widths} {
+    display: flex;
+    flex-wrap: wrap;
+
     min-height: 620px;
   }
 
   @media #{$desktop-widths} {
-    min-height: 800px;
+    min-height: 700px;
   }
 
   &__header {
-    font-size: 25pt;
-    line-height: 30pt;
+
+
+    font-size: 19pt;
+    line-height: 28pt;
     font-weight: bold;
 
+    margin-top: 20px;
+
     @media #{$tablet-widths} {
-      font-size: 43pt;
-      line-height: 50pt;
+      font-size: 32pt;
+      margin-top: 44px;
     }
 
     @media #{$desktop-widths} {
@@ -29,19 +38,25 @@
   }
 
   &__label {
-    font-size: 17pt;
-    line-height: 16pt;
+    font-size: 12pt;
+    line-height: 12pt;
     font-weight: bold;
     color: $green;
     text-transform: uppercase;
+
+    letter-spacing: 0.8px;
   }
 
   &__text {
-    font-size: 15pt;
-    line-height: 24pt;
+    margin-top: 18px;
+
+    font-size: 11pt;
+    line-height: 19pt;
+
+    letter-spacing: 0.2px;
 
     @media #{$tablet-widths} {
-      font-size: 17pt;
+      font-size: 12.5pt;
       line-height: 30pt;
     }
 
@@ -52,12 +67,16 @@
   }
 
   &__about {
+    display: flex;
 
   }
 
   &__about-column {
-    font-size: 15pt;
-    line-height: 20pt;
+    margin-top: 0;
+    margin-right: 29px;
+
+    font-size: 11pt;
+    line-height: 30pt;
   }
 
   &__picture {
@@ -65,14 +84,22 @@
   }
 
   &__picture-image {
+    margin-top: 15px;
+
     background-color: #f1f1f1;
+
+    border: 0.1px solid black;
 
   }
 
   &__price {
-    font-size: 17pt;
-    line-height: 24pt;
+    text-align: center;
+
+    font-size: 13pt;
+    line-height: 19pt;
     font-weight: bold;
+
+    margin-bottom: 24px;
 
     @media #{$tablet-widths} {
       font-size: 20pt;

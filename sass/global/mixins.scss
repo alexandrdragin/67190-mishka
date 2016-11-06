@@ -37,7 +37,9 @@
 @mixin header {
   font-weight: bold;
   line-height: 25px;
-  font-size: 27pt;
+  font-size: 18pt;
+
+  letter-spacing: 0.3px;
 
   @media #{$tablet-widths} {
     font-size: 43pt;
@@ -51,10 +53,18 @@
 }
 
 @mixin button-text {
-  font-size: 18pt;
+  min-height: 52px;
+
+  text-align: center;
+  margin: auto;
+  width: 100%;
+
+  font-size: 14pt;
   line-height: 30pt;
   text-transform: uppercase;
-  font-weight: bold;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2pt solid black;
 
   @media #{$tablet-widths} {
     font-size: 17pt;
