@@ -8,7 +8,7 @@ body {
   background-color: white;
 
   @include container;
-  @include main-padding;
+
 }
 
 fieldset {
@@ -19,6 +19,7 @@ fieldset {
 
 button {
   border: none;
+  outline: none;
 }
 
 a {
