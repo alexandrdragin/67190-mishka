@@ -42,8 +42,7 @@
   letter-spacing: 0.3px;
 
   @media #{$tablet-widths} {
-    font-size: 43pt;
-    line-height: 50px;
+    font-size: 32pt;
   }
 
   @media #{$desktop-widths} {
@@ -60,15 +59,15 @@
   width: 100%;
 
   font-size: 14pt;
-  line-height: 30pt;
+
   text-transform: uppercase;
 
   background-color: rgba(255, 255, 255, 0.5);
   border: 2pt solid black;
 
   @media #{$tablet-widths} {
-    font-size: 17pt;
-    line-height: 24pt;
+    font-size: 12pt;
+    letter-spacing: 1.5px;
   }
 
 }

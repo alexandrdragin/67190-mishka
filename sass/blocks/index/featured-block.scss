@@ -3,10 +3,10 @@
 }
 
 .featured-intro {
-    @include main-padding;
+  @include main-padding;
 
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
   min-height: 205px;
 
