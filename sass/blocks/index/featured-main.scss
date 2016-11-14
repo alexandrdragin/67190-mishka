@@ -1,82 +1,173 @@
 .featured-main {
+  @include main-padding;
 
-  min-height: 825px;
+  min-height: 820px;
   border: 1px solid green;
+  text-align: left;
 
   @media #{$tablet-widths} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    align-content: flex-start;
+
     min-height: 620px;
   }
 
   @media #{$desktop-widths} {
-    min-height: 800px;
+    min-height: 700px;
   }
 
   &__header {
-    font-size: 25pt;
-    line-height: 30pt;
+    font-size: 19pt;
+    line-height: 28pt;
     font-weight: bold;
 
+    margin-top: 20px;
+
     @media #{$tablet-widths} {
-      font-size: 43pt;
-      line-height: 50pt;
+      font-size: 32pt;
+      margin-top: 47px;
     }
 
     @media #{$desktop-widths} {
-      font-size: 53pt;
+      font-size: 43pt;
       line-height: 57pt;
     }
 
   }
 
   &__label {
-    font-size: 17pt;
-    line-height: 16pt;
+    font-size: 12pt;
+    line-height: 12pt;
     font-weight: bold;
     color: $green;
     text-transform: uppercase;
-  }
 
-  &__text {
-    font-size: 15pt;
-    line-height: 24pt;
+    letter-spacing: 0.8px;
 
     @media #{$tablet-widths} {
-      font-size: 17pt;
-      line-height: 30pt;
+      border: 1px solid red;
+      font-size: 12pt;
+      font-weight: normal;
+
+      text-align: center;
+      width: 70px;
+
+      margin-top: 52px;
+      margin-right: 26px;
+      letter-spacing: 1.3px;
+
+    }
+
+    @media #{$desktop-widths} {
+      order: -1;
+    }
+  }
+
+  &__about {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    @media #{$tablet-widths} {
+      flex-direction: column;
+      width: 45%;
+    }
+  }
+
+  &__about-text {
+    margin-top: 18px;
+
+    font-size: 11pt;
+    line-height: 19pt;
+
+    letter-spacing: 0.2px;
+
+    @media #{$tablet-widths} {
+      color: $btn;
+
+      font-size: 12.5pt;
+      line-height: 30px;
+      margin-top: 54px;
+
     }
 
     @media #{$desktop-widths} {
 
     }
-
   }
 
-  &__about {
+  &__about-wrap {
+     display: flex;
+
+    @media #{$tablet-widths} {
+      flex-direction: row;
+
+      margin-top: 18px;
+    }
 
   }
 
   &__about-column {
-    font-size: 15pt;
-    line-height: 20pt;
+    margin-top: 0;
+    margin-right: 29px;
+
+    font-size: 11pt;
+    line-height: 30pt;
+
+    @media #{$tablet-widths} {
+      flex-direction: row;
+
+      }
   }
 
   &__picture {
 
+  @media #{$tablet-widths} {
+
+    }
+
   }
 
   &__picture-image {
+    margin-top: 15px;
+
     background-color: #f1f1f1;
+
+    border: 0.1px solid black;
+
+    @media #{$tablet-widths} {
+      margin-top: 62px;
+      width: 330px;
+    }
 
   }
 
+  &__price-wrap {
+    @media #{$tablet-widths} {
+      width: 290px;
+
+      margin-top: -138px;
+    }
+  }
+
   &__price {
-    font-size: 17pt;
-    line-height: 24pt;
+    text-align: center;
+
+    font-size: 13pt;
+    line-height: 19pt;
     font-weight: bold;
 
+    margin-bottom: 24px;
+
     @media #{$tablet-widths} {
-      font-size: 20pt;
+      color: $btn;
+      font-size: 15pt;
       line-height: 24pt;
+
+      margin-bottom: 29px;
     }
 
     @media #{$desktop-widths} {
@@ -87,5 +178,9 @@
 
   &__button {
     @include button-text;
+
+    @media #{$tablet-widths} {
+
+    }
   }
 }

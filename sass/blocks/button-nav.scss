@@ -1,16 +1,84 @@
-.button-nav {
-  display: none;
-  min-height: 80px;
+.page-header__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
 
-  &--close {
+  z-index: 1;
 
+  @media #{$tablet-widths} {
+    display: none;
   }
 
-  &--open {
+  &-nav--open {
+    top: 36px;
+    left: 30px;
 
+    color: #000;
+    position: absolute;
+
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    transition: all 0.4s ease;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 0;
+      width: 20px;
+      height: 2px;
+      background-color: currentColor;
+      transition: all 0.4s ease;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 20px;
+      height: 2px;
+      background-color: currentColor;
+      transition: all 0.4s ease;
+    }
   }
 
-  &__icon-menu {
 
+  &-nav--close {
+    top: 27px;
+    left: 30px;
+    color: #000;
+    position: absolute;
+
+    width: 21px;
+    height: 21px;
+    transition: all 0.4s ease;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      width: 22px;
+      height: 2px;
+      background-color: currentColor;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+              transition: all 0.4s ease;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      width: 22px;
+      height: 2px;
+      background-color: currentColor;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+              transition: all 0.4s ease;
+    }
   }
 }

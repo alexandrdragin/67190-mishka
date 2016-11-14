@@ -3,12 +3,18 @@
 }
 
 .featured-intro {
+  @include main-padding;
+
+  display: flex;
+  flex-wrap: wrap;
+
   min-height: 205px;
-  border: 1px solid yellow;
 
 
   @media #{$tablet-widths} {
     min-height: 120px;
+
+    flex-wrap: nowrap;
 
   }
 
@@ -17,27 +23,33 @@
   }
 
   &__item {
-    font-size: 19pt;
-    line-height: 24pt;
-    font-weight: bold;
+    width: 100%;
+
+    margin-top: 17pt;
+    min-height: 78px;
+
+    font-size: 14pt;
+    line-height: 20pt;
     color: white;
+
+    letter-spacing: 1px;
 
 
 
     @media #{$tablet-widths} {
+      width: 50%;
+
       font-size: 15pt;
       line-height: 22pt;
-      display: inline-block;
+
 
       margin-top: 18pt;
-      margin-left: 32px;
-      margin-right: 185px;
+      margin-left: 33px;
 
-      border: 1px solid black;
     }
 
     @media #{$desktop-widths} {
-
+        margin-left: 36px;
     }
   }
 

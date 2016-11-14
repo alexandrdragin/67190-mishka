@@ -71,8 +71,28 @@
       margin-top: 54px;
     }
 
-    &--img{
+    &--img {
 
+      margin-left: 25px;
+      margin-right: 25px;
+
+      @media #{$tablet-widths} {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 110px;
+
+        font-size: 32pt;
+        line-height: 50px;
+      }
+
+      @media #{$desktop-widths} {
+        font-size: 42pt;
+
+        letter-spacing: -1pt;
+
+        margin: 110px 190px 0px 190px;
+        line-height: 44pt;
+      }
     }
   }
 }
