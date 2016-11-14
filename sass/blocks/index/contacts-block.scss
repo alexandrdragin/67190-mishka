@@ -1,5 +1,7 @@
 .contacts-block {
 
+  @include main-padding;
+
   min-height: 900px;
   border: 1px solid yellow;
 
@@ -13,7 +15,7 @@
   }
 
   &__header {
-    margin-left: 30px;
+
     margin-top: 34px;
 
     font-size: 14pt;
@@ -22,7 +24,7 @@
 
     @media #{$tablet-widths} {
       font-size: 43pt;
-      line-height: 50pt;
+
     }
 
     @media #{$desktop-widths} {
@@ -33,7 +35,7 @@
   }
 
   &__wrapper {
-    @include main-padding;
+
     margin-top: 4px;
 
     display: flex;
