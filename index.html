@@ -11,6 +11,9 @@
     <div class="global-wrapper">
 
       <header class="page-header">
+        <div class="page-header__button">
+          <div class="page-header__button-nav page-header__button-nav--open"></div>
+        </div>
         <nav class="main-nav main-nav--open">
           <div lass="main-nav main-nav--left">
             <a class="main-nav__item" href="catalog.html">Каталог товаров</a>
@@ -24,18 +27,11 @@
 
         <a class="page-header__logo-wrapper" href="index.html">
           <picture>
-            <img class="page-header__logo" src="img/logo-sedona-mobile.svg" height="90" width="210" alt="Мишка">
+            <img class="page-header__logo" src="img/logo-mobile.svg" height="90" width="90" alt="Мишка">
           </picture>
         </a>
 
-        <button class="button-nav">
-          <svg class="button-nav__icon-menu button-nav--close" height="22" width="22">
-            <use xlink:href="#icon-cross" />
-          </svg>
-          <svg class="button-nav__icon-menu button-nav--open" height="25" width="25">
-            <use xlink:href="#icon-menu" />
-          </svg>
-        </button>
+
 
         <div class="sub-header">
           <div class="sub-header-wrapper">
@@ -45,7 +41,7 @@
             <a class="sub-header__item  sub-header__item--tablet" href="">Вязание на заказ</a>
             <a class="sub-header__item  sub-header__item--right" href="">Бесплатная доставка по России</a>
           </div>
-          <h1 class="sub-header__header sub-header__header--img">
+          <h1 class="sub-header__header  sub-header__header--img">
             Милые штуки ручной работы для дома
           </h1>
         </div>
@@ -65,19 +61,23 @@
           <div class="featured-main">
             <h2 class="featured-main__header header-mixin">Вязаные корзинки</h2>
             <small class="featured-main__label">ТОВАР НЕДЕЛИ</small>
-            <p class="featured-main__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
             <div class="featured-main__about">
-              <p class="featured-main__about-column">Цвет:<br>Диаметр:<br>Высота:</p>
-              <p class="featured-main__about-column">«Тиффани»/серый<br>25 см<br>15 см</p>
+              <p class="featured-main__about-text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+              <div class="featured-main__about-wrap">
+                <p class="featured-main__about-column">Цвет:<br>Диаметр:<br>Высота:</p>
+                <p class="featured-main__about-column">«Тиффани»/серый<br>25 см<br>15 см</p>
+              </div>
             </div>
 
             <picture class="featured-main__picture">
-              <img class="featured-main__picture-image" src="" height="350" width="320" alt="Вязаные корзинки">
+              <img class="featured-main__picture-image" src="img/triple-set-mobile@1x.jpg" height="350" width="320" alt="Вязаные корзинки">
             </picture>
 
-            <span class="featured-main__price">Цена: 990 руб.</span>
-            <button class="featured-main__button button-mixin" type="button">Заказать</button>
+            <div class="featured-main__price-wrap">
+              <p class="featured-main__price">Цена: 990 руб.</p>
+              <button class="featured-main__button" type="button">Заказать</button>
+            </div>
           </div>
         </section>
 
@@ -112,6 +112,10 @@
           </div>
 
           <div class="about-block__feedback-wrapper">
+            <picture class="about-block__feedback-picture">
+              <img class="about-block__feedback-image" src="img/review@1x.jpg" height="455" width="350" alt="Вязаные корзинки">
+            </picture>
+
             <h2 class="about-block__feedback-header">Отзывы</h2>
             <p class="about-block__feedback-text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
 
@@ -138,12 +142,12 @@
           </div>
           <div class="contacts-block__wrapper">
             <p class="contacts-block__column">адрес:</p>
-            <p class="contacts-block__column">г. Санкт-Петербург,
+            <p class="contacts-block__column">г. Санкт-Петербург,<br>
             ул. Большая Конюшенная, д. 19/8, офис 101</p>
           </div>
 
           <picture class="contacts-block__map contacts-block__map--pin">
-            <img class="contacts-block__map-image" src="" height="350" width="320" alt="Карта">
+            <img class="contacts-block__map-image" src="img/map-mobile@1x.jpg" height="350" width="320" alt="Карта">
           </picture>
 
           <button class="contacts-block__button" type="button">Напишите нам</button>
@@ -220,5 +224,6 @@
 
     </div>
 
+  <script src="js/button.js"></script>
   </body>
 </html>

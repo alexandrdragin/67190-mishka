@@ -1,24 +1,82 @@
 .page-footer {
   position: relative;
   background-color: $footer;
-  min-height: 160px;
+  height: 150px;
 
   border: 1px solid red;
 
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: space-around;
+
+  text-align: center;
+
+  align-items: center;
+
+
+  @media #{$tablet-widths} {
+    flex-direction: row;
+    margin-top: 25px;
+    min-height: 60px;
+
+    justify-content: space-around;
+
+    @media #{$desktop-widths} {
+      margin-top: 160px;
+      margin-bottom: 60px;
+    }
+  }
+
  &__header {
+   display: none;
+   text-transform: uppercase;
+
+   @media #{$tablet-widths} {
+     display: block;
+     position: relative;
+     top: -5px;
+   }
 
  }
+
  &__item-wrapper {
 
  }
 
  &__item {
+   display: inline-block;
+   position: relative;
+   margin: 1px;
+   width: 48px;
+   height: 48px;
+   background: $green;
+
+   @media #{$tablet-widths} {
+     width: 48px;
+     height: 48px;
+   }
+
+   &:hover {
+     background-color: $green;
+   }
+
+   &:active {
+     background-color: $green;
+     fill: #88b6d1;
+   }
 
  }
 
  &__icon {
+   position: absolute;
+   margin: 0;
+   top: 14px;
+   left: 15px;
 
+   &:active {
+     fill: #88b6d1;
+   }
  }
 
  &__copyright {
@@ -26,8 +84,13 @@
    font-size: 19pt;
    line-height: 18px;
 
-   @media #{$tablet-widths} {
+   position: relative;
+   top: 5px;
+   left: 5px;
+   display: inline;
 
+   @media #{$tablet-widths} {
+     top: -5px;
    }
 
    @media #{$desktop-widths} {
@@ -36,6 +99,18 @@
  }
 
  &__copyright-icon {
+   position: relative;
+   top: -5px;
+   margin-bottom: -20px;
+   fill: black;
+
+   &:hover {
+     fill: black;
+   }
+
+   &:active {
+     fill: grey;
+   }
 
  }
 }

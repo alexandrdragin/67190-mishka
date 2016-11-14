@@ -13,7 +13,10 @@
   }
 
   &__header {
-    font-size: 18pt;
+    margin-left: 30px;
+    margin-top: 34px;
+
+    font-size: 14pt;
     line-height: 30pt;
     font-weight: bold;
 
@@ -30,12 +33,20 @@
   }
 
   &__wrapper {
+    @include main-padding;
+    margin-top: 4px;
 
+    display: flex;
+    flex-wrap: nowrap;
   }
 
   &__column {
-    font-size: 15pt;
-    line-height: 30pt;
+
+
+    margin-left: 30px;
+
+    font-size: 11pt;
+    line-height: 23pt;
 
     @media #{$tablet-widths} {
       font-size: 17pt;
@@ -47,17 +58,23 @@
 
   }
 
-  &__map {
+  &__column:first-child {margin-left: 0;}
 
+  &__map {
+    opacity: .5;
   }
 
   &__map-image {
+    margin-top: 22px;
     background-color: $footer;
 
   }
 
   &__button {
     @include button-text;
+    margin-top: 35px;
+    margin-left: 30px;
+    width: 81%;
   }
 
 }
