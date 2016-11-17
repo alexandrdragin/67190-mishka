@@ -1,19 +1,29 @@
 .contacts-block {
-
   min-height: 900px;
   border: 1px solid yellow;
 
+
+
   @media #{$tablet-widths} {
-    min-height: 940px;
+    min-height: 920px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start
   }
 
   @media #{$desktop-widths} {
     min-height: 650px;
 
+    flex-direction: column;
+    position: relative;
   }
 
+
   &__header {
-    margin-left: 30px;
+
+    @include main-padding;
+
     margin-top: 34px;
 
     font-size: 14pt;
@@ -21,35 +31,66 @@
     font-weight: bold;
 
     @media #{$tablet-widths} {
-      font-size: 43pt;
-      line-height: 50pt;
+      font-size: 33pt;
+      margin-top: 84px;
+      letter-spacing: -1px;
+
+      padding-left: 45px;
+
+      width: 100%;
     }
 
     @media #{$desktop-widths} {
       font-size: 53pt;
       line-height: 57pt;
+
+
     }
 
   }
 
   &__wrapper {
+
     @include main-padding;
+
     margin-top: 4px;
 
     display: flex;
     flex-wrap: nowrap;
+    flex-grow: 2;
+
+    @media #{$tablet-widths} {
+      width: 30%;
+
+      padding: 0;
+
+      border: 1px solid black;
+      margin-left: 0;
+
+      margin-top: 53px;
+    }
+
+    &--padding {
+      @media #{$tablet-widths} {
+        padding-left: 50px;
+        flex-grow: 1.3;
+      }
+
+    }
   }
 
   &__column {
-
-
     margin-left: 30px;
 
     font-size: 11pt;
     line-height: 23pt;
 
     @media #{$tablet-widths} {
-      font-size: 17pt;
+      font-size: 12pt;
+      margin-left: 25px;
+
+      letter-spacing: 0.4px;
+        margin-top: 0;
     }
 
     @media #{$desktop-widths} {
@@ -62,11 +103,28 @@
 
   &__map {
     opacity: .5;
+    width: 100%;
+
+
+
   }
 
   &__map-image {
+
     margin-top: 22px;
+
     background-color: $footer;
+
+    @media #{$tablet-widths} {
+
+      margin-top: 40px;
+    }
+
+    @media #{$desktop-widths} {
+      position: absolute;
+      right: 0;
+      top:0
+    }
 
   }
 
@@ -75,6 +133,16 @@
     margin-top: 35px;
     margin-left: 30px;
     width: 81%;
+
+    @media #{$tablet-widths} {
+      width: 30%;
+      margin: auto;
+      margin-top: 47px;
+    }
+
+    @media #{$desktop-widths} {
+
+    }
   }
 
 }

@@ -16,7 +16,11 @@
   }
 
   @media #{$desktop-widths} {
-    min-height: 700px;
+    min-height: 800px;
+    padding-left: 225px;
+    justify-content:flex-start;
+    position: relative;
+    flex-direction: column;
   }
 
   &__header {
@@ -29,11 +33,16 @@
     @media #{$tablet-widths} {
       font-size: 32pt;
       margin-top: 47px;
+
+      margin-left: -5px;
     }
 
     @media #{$desktop-widths} {
-      font-size: 43pt;
-      line-height: 57pt;
+      font-size: 40pt;
+      margin-top: -38px;
+      margin-left: -5px;
+
+      letter-spacing: -0.3px;
     }
 
   }
@@ -63,6 +72,9 @@
 
     @media #{$desktop-widths} {
       order: -1;
+      margin-left: -130px;
+      margin-top: 134px;
+
     }
   }
 
@@ -74,6 +86,7 @@
     @media #{$tablet-widths} {
       flex-direction: column;
       width: 45%;
+      margin-left: -2px;
     }
   }
 
@@ -95,7 +108,8 @@
     }
 
     @media #{$desktop-widths} {
-
+      margin-top: 56px;
+      width: 300px;
     }
   }
 
@@ -106,6 +120,10 @@
       flex-direction: row;
 
       margin-top: 18px;
+    }
+
+    @media #{$desktop-widths} {
+      margin-top: 30px;
     }
 
   }
@@ -124,8 +142,7 @@
   }
 
   &__picture {
-
-  @media #{$tablet-widths} {
+    @media #{$tablet-widths} {
 
     }
 
@@ -143,6 +160,19 @@
       width: 330px;
     }
 
+    @media #{$desktop-widths} {
+      order: 3;
+
+      position: absolute;
+      top: 5px;
+      right: 50px;
+      z-index: -1;
+
+      width: 525px;
+      height: 635px;
+
+    }
+
   }
 
   &__price-wrap {
@@ -150,6 +180,9 @@
       width: 290px;
 
       margin-top: -138px;
+    }
+    @media #{$desktop-widths} {
+      margin-top: 75px;
     }
   }
 
