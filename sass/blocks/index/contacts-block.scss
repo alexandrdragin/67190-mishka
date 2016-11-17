@@ -2,8 +2,6 @@
   min-height: 900px;
   border: 1px solid yellow;
 
-
-
   @media #{$tablet-widths} {
     min-height: 920px;
 
@@ -21,7 +19,6 @@
 
 
   &__header {
-
     @include main-padding;
 
     margin-top: 34px;
@@ -43,8 +40,6 @@
     @media #{$desktop-widths} {
       font-size: 53pt;
       line-height: 57pt;
-
-
     }
 
   }
